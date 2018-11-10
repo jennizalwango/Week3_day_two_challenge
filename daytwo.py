@@ -1,14 +1,16 @@
 vowels = 'aieou'
 string = input('enter word')
-list = []
+lista = []
+
 def get_vowel():
     for x in string:
         count = string.count(x)
         if count >=1 and x in vowels:
-            list.append(x)
-            tuple()
-            print(f'( {list}, {count} )')
+            lista.insert(0,x)
+            lista.append(count)
+            print(tuple( lista))
         else:
             print('no vowel found')
         break
+
 get_vowel()        
